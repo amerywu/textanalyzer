@@ -1,0 +1,11 @@
+.settings/
+bin/
+logs/
+target/
+output/
+*.csv
+.classpath
+.idgen
+.project
+.metadata/
+.recommenders/
