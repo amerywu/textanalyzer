@@ -9,6 +9,7 @@ from tools.text_pipeline import sklearn_corpora_builder
 from tools.text_pipeline import topic_comparator
 from tools.text_pipeline import save_corpus_to_file
 from tools.text_pipeline import job_df_analysis
+from tools.text_pipeline import df_analysis
 from tools.text_sub_pipeline import gensim_lda_grouped
 
 
@@ -38,6 +39,7 @@ class PipelineManifest:
         "TopicComparator" : tools.text_pipeline.topic_comparator.TopicComparator(),
         "SaveDfAsCsv" : tools.text_pipeline.save_corpus_to_file.SaveDfAsCsv(),
         "JobDfAnalysis": tools.text_pipeline.job_df_analysis.JobDfAnalysis(),
+        "DfGroupByAnalysis": tools.text_pipeline.df_analysis.DfGroupByAnalysis(),
         "AreasOfStudyDfAnalysis": tools.text_pipeline.job_df_analysis.AreasOfStudyDfAnalysis(),
 
     }

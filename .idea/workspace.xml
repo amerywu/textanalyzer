@@ -1,7 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="90849e0c-6f50-45d2-8743-03a3922bbd87" name="Default Changelist" comment="" />
+    <list default="true" id="90849e0c-6f50-45d2-8743-03a3922bbd87" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/resources/tools_extraction_standard.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tools/text_pipeline/df_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/tools.ini" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tools.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/text_pipeline/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/text_pipeline/factory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/text_pipeline/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/text_pipeline/pipeline.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/utils/dfutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/utils/dfutils.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,32 +25,32 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1Q3pnTqNTJq0pO2nlLZwoxFTNOc" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/tools/post_pipeline" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySaveCallSignatures" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jake\_pythonws\textanalyzer\resources" />
+      <recent name="C:\Users\jake\_pythonws\textanalyzer\tools\text_pipeline" />
+      <recent name="C:\Users\jake\_pythonws\textanalyzer\tools\post_pipeline" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/visiertools/elasticsearch_extraction" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/resources/flatfiles" />
       <recent name="$PROJECT_DIR$/visiertools/retired" />
       <recent name="$PROJECT_DIR$/visiertools/post_pipeline" />
       <recent name="$PROJECT_DIR$/visiertools/model" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\jake\_pythonws\textanalyzer\tools\post_pipeline" />
-      <recent name="C:\Users\jake\_pythonws\textanalyzer\tools\text_pipeline" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/visiertools/elasticsearch_extraction" />
-      <recent name="$PROJECT_DIR$/resources/flatfiles" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -254,6 +263,19 @@
     </task>
     <servers />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
       <path value="$PROJECT_DIR$/.." />
@@ -271,6 +293,16 @@
           <url>file://$PROJECT_DIR$/tools/utils/dfutils.py</url>
           <line>33</line>
           <option name="timeStamp" value="270" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py</url>
+          <line>153</line>
+          <option name="timeStamp" value="295" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py</url>
+          <line>142</line>
+          <option name="timeStamp" value="297" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -40,6 +40,7 @@ def _extract(es, pipe, dependencies_dict:Dict):
     else:
         _extract_from_one_provider(es, provider, pipe, dependencies_dict)
 
+
 def _enter_pipeline(package:merm_model.PipelinePackage, pipe):
     pipe(package)
 
@@ -97,13 +98,7 @@ def initiate_extraction(pipe, dependencies_dict):
     return _extract(es, pipe, dependencies_dict)
 
 def scrolled_search(es, index_name):
-
-
-
-
     page_list = []
-
-
     page = es.search(
         index= index_name,
         scroll='2m',
@@ -126,37 +121,46 @@ def scrolled_search(es, index_name):
         scroll_size = len(page['hits']['hits'])
         #print ("scroll size: " + str(scroll_size))
         page_list.append(page)
-
     return page_list
+
+
+def _process_row(content,provider):
+    if provider == "job":
+        return _process_job_row(content)
+    elif provider == "possible-phrase":
+        return _process_pp_row(content)
+    else:
+        raise Exception("Unknown Provider " + provider)
 
 #Retrieves all documents in an ES Index. Each index contains content from one confluence space
 def _retrieve_index_content(es, index_name, provider):
 
     rows_list = []
     log.getLogger().debug("Retrieving content for " + index_name)
-
-
     space_content_page_list = scrolled_search(es, index_name)
     count = 0
-    if "job" in provider:
-        for space_content_result in space_content_page_list:
-            for content in space_content_result['hits']['hits']:
-                try:
-                    row = _process_job_row(content)
-                    rows_list.append(row)
-                    count = count + 1
-                except:
-                    log.getLogger().error(str(index_name) + " failed to get row: " + str(count))
-                    log.getLogger().error("maybe add this index to tools.ini ignore list?")
-                    pass
-            log.getLogger().info("Extracted "+ str(count))
+    for space_content_result in space_content_page_list:
+        for content in space_content_result['hits']['hits']:
+            try:
+                row = _process_row(content, provider)
+                rows_list.append(row)
+                count = count + 1
+            except:
+                log.getLogger().error(str(index_name) + " failed to get row: " + str(count))
+                log.getLogger().error("maybe add this index to tools.ini ignore list?")
+                pass
+        log.getLogger().info("Extracted "+ str(count))
 
-        return pd.DataFrame(rows_list)
-    else:
-        log.getLogger().warning("UNKNOWN PROVIDER: " + provider)
-        return pd.DataFrame()
+    return pd.DataFrame(rows_list)
+   
 
 
+def _process_pp_row(content):
+    row = {
+        "possible-phrase": content['_source']['possible-phrase'],
+        "token-type": content['_source']['token-type']
+    }
+    return row
 
 
 def _process_job_row(content):

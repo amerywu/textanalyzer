@@ -46,9 +46,13 @@ _save_as_csv = [
 
 _job_integrity_analysis = [
     (10, "JobDfAnalysis"),
-    (20, "AreasOfStudyDfAnalysis")
+    (20, "AreasOfStudyDfAnalysis"),
+    (30, "SaveDfAsCsv")
 ]
 
+_group_by_column = [
+    (10, "DfGroupByAnalysis")
+]
 
 
 def pick_pipeline():
@@ -67,6 +71,8 @@ def pick_pipeline():
         return _save_as_csv
     elif pipeline_name == '_job_integrity_analysis':
         return _job_integrity_analysis
+    elif pipeline_name == '_group_by_column':
+        return _group_by_column
     else:
         log.getLogger().warning(str(pipeline_name) + "is invalid. Please configure tools.ini and create a relevant list of steps within this script")
         return []

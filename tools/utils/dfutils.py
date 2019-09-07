@@ -16,7 +16,7 @@ def col_names(df, df_name=""):
     colNames = df.columns.values
     cnstr = ""
     for cn in colNames:
-        cnstr = cnstr + "\n" + cn
+        cnstr = str(cnstr) + "\n" + str(cn)
 
     log.getLogger().info(df_name + " Column Names: " + cnstr + "\n")
 
