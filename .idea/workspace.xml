@@ -2,14 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90849e0c-6f50-45d2-8743-03a3922bbd87" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/tools_extraction_standard.ini" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tools/text_pipeline/df_analysis.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/nlp_inputs/nltk_basic_stoplist.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/ga2.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/tools.ini" beforeDir="false" afterPath="$PROJECT_DIR$/resources/tools.ini" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tools/post_pipeline/post_process_factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/post_pipeline/post_process_factory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/text_pipeline/factory.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/text_pipeline/factory.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tools/text_pipeline/pipeline.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/text_pipeline/pipeline.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/utils/dfutils.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/utils/dfutils.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,8 +32,8 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="last_opened_file_path" value="D:/Dropbox/amery_lab1/_pythonws/proof_of_concept" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="PyDebuggerOptionsProvider">
     <option name="mySaveCallSignatures" value="true" />
@@ -293,16 +294,6 @@
           <url>file://$PROJECT_DIR$/tools/utils/dfutils.py</url>
           <line>33</line>
           <option name="timeStamp" value="270" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py</url>
-          <line>153</line>
-          <option name="timeStamp" value="295" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tools/elasticsearch_extraction/es_extraction.py</url>
-          <line>142</line>
-          <option name="timeStamp" value="297" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

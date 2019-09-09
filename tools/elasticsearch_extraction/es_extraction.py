@@ -152,7 +152,7 @@ def _retrieve_index_content(es, index_name, provider):
         log.getLogger().info("Extracted "+ str(count))
 
     return pd.DataFrame(rows_list)
-   
+
 
 
 def _process_pp_row(content):

@@ -25,6 +25,8 @@ smart-open>=1.8.0
 urllib3>=1.24.1
 scikit-learn>=0.20
 matplotlib>=3.0.3
+python-rake>= 1.4.5
+
 
 
 # Testing

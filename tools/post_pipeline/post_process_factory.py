@@ -8,6 +8,7 @@ import tools.post_pipeline.gensim_lda_report as gensim_lda_report
 import tools.post_pipeline.gensim_lda_report_topic_similarity as gensim_similarity_report
 import tools.post_pipeline.save_dictionaries_to_file as save_dictionaries_to_file
 import tools.post_pipeline.major_analysis as major_analysis
+import tools.post_pipeline.rake as rake
 
 
 import tools.utils.envutils as env
@@ -38,5 +39,7 @@ def triage(package:merm_model.PipelinePackage):
 
         elif instruction == "major_analysis":
             major_analysis.run_post_process(package)
+        elif instruction == "rake":
+            rake.run_post_process(package)
         elif instruction == "none":
             log.getLogger().info("Nothing to do. No post-process assigned.")

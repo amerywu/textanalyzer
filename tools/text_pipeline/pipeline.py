@@ -54,6 +54,10 @@ _group_by_column = [
     (10, "DfGroupByAnalysis")
 ]
 
+_rake = [
+    (10, "RakeAnalysis")
+]
+
 
 def pick_pipeline():
     pipeline_name = env.config["pipeline_instructions"]["pipeline_name"]
@@ -73,8 +77,10 @@ def pick_pipeline():
         return _job_integrity_analysis
     elif pipeline_name == '_group_by_column':
         return _group_by_column
+    elif pipeline_name == '_rake':
+        return _rake
     else:
-        log.getLogger().warning(str(pipeline_name) + "is invalid. Please configure tools.ini and create a relevant list of steps within this script")
+        log.getLogger().warning(str(pipeline_name) + " is invalid. Please configure tools.ini and create a relevant list of steps within this script")
         return []
 
 
